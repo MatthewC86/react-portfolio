@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './components/Header';
 import Nav from './components/Navbar';
 
 
@@ -7,6 +8,7 @@ import Nav from './components/Navbar';
 export default function App() {
   return (
     <div>
+      <Header></Header>
       <Nav />
       
     </div>

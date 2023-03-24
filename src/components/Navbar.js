@@ -8,6 +8,7 @@ export default function Nav() {
       <section
         style={{
           display: 'flex',
+          float: 'right',
           fontFamily: 'helvetica',
           flexDirection: 'row',
           alignItems: 'flex-start',
