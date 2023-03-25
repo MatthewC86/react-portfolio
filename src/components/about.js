@@ -3,7 +3,8 @@ import React from "react";
 function About() {
   return (
     <div>
-      <p>
+        <img className="image" src={'/images/logo.png'} alt="Matthew C"/>
+      <p className="content">
         My name is Mattew Courtney and have always had a passion for technology.
         I acquired an associates degree in Systems Developement and Programming
         in 2013, loving every aspect. I'm currently employed with PNC Bank, as

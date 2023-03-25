@@ -15,20 +15,18 @@ export default function Nav() {
           justifyContent: 'flex-start',
         }}
       >
-        <div style={linkStyle}>
-          <a href="#About Me">About Me</a>
+        {['About', 'Portfolio', 'Contact', 'Resume']
+        .map(navi => (
+          <div style={linkStyle}>
+          <a href={"#" + navi.toLowerCase()}>{navi}</a>
         </div>
-        <div style={linkStyle}>
-          <a href="#Portfolio">Portfolio</a>
-        </div>
-        <div style={linkStyle}>
-          <a href="#Contact">Contact</a>
-        </div>
-        <div style={linkStyle}>
-          <a href="#Resume">Resume</a>
-        </div>
+        ))}
+        
+        
       </section>
     </nav>
   );
-}
+};
+
+
 
