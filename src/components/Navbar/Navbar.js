@@ -33,13 +33,13 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/" className="title">
-        Matthew C
+        Matthews Portfolio
       </Link>
       <ul>
         <CustomLink to="/about">About</CustomLink>
         <CustomLink to="/portfolio">Portfolio</CustomLink>
         <CustomLink to="/contact">Contact</CustomLink>
-        <CustomLink to="/resume">Resume</CustomLink>
+        <CustomLink to="https://docs.google.com/document/d/16casLWu7l25t-JGJkEKw26k2opi5o3TmjfGNfZ1jadg/edit?usp=sharing" target="_blank">Resume</CustomLink>
       </ul>
     </nav>
   );

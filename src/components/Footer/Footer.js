@@ -5,7 +5,8 @@ import React from "react";
 function Footer() {
   return (
 
-//     <footer className="footer">
+    
+
 // 			<div>
 // 			<a href="https://github.com/" class="fa fa-github"
 // 					target="_blank"
@@ -31,23 +32,24 @@ function Footer() {
 // 					></img>
 // 				</a>
 // 			</div> 
-// 			 <div> 
-// 				<a
-// 					href="https://facebook.com"
-// 					target="_blank"
-// 					rel="noopener noreferrer"
-// 				>
-// 					<img
-// 						src={require("../Footer/facebook.png")}
-// 						alt="Facebook"
-// 						className="logo"
-// 					></img>
-// 				</a>
-// 			</div>
-// 		</footer>
-//   );
-// }
-<footer>
+<footer className="footer">
+			 <div> 
+				<a
+					href="https://facebook.com"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						src={require("../Footer/facebook.png")}
+						alt="Facebook"
+						className="logo"
+					></img>
+				</a>
+			</div>
+		</footer>
+  );
+}
+{/* <footer>
       <div className="container">
         <div className="social-links">
           <a href="https://github.com/username"><i className="fab fa-github"></i></a>
@@ -57,7 +59,7 @@ function Footer() {
       </div>
     </footer>
   );
-}
+} */}
 
 
 export default Footer;

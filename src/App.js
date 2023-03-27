@@ -1,3 +1,5 @@
+import Header from "./components/Header"
+// import Footer from "./components/Footer/Footer"
 import Navbar from "./components/Navbar/Navbar"
 import About from "./components/Pages/About"
 import Portfolio from "./components/Pages/Portfolio"
@@ -8,6 +10,7 @@ import { Route, Routes} from "react-router-dom"
 function App() {
   return (
     <>
+    <Header />
     <Navbar />
     <div className="container">
       <Routes>
@@ -17,9 +20,12 @@ function App() {
         <Route path="/resume" element={<Resume />}/>
       </Routes>
     </div>
+    {/* <Footer /> */}
     </>
   ) 
 }
 
 export default App
+
+
 
