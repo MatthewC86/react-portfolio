@@ -5,7 +5,7 @@
 body {
     margin: 0;
     
-    /* background-color: rgb(247, 220, 166); */
+    background-color: rgb(145, 241, 151);
   
   }
 
@@ -19,7 +19,7 @@ body {
   }
 
   .nav {
-    background-color: aquamarine;
+    background-color: rgb(227, 211, 202);
     color:blueviolet;
     display: flex;
     justify-content: space-between;
