@@ -27,56 +27,31 @@
 //   );
 // };
 
-// import React from "react";
-// import { Link } from "react-router-dom";
-
-// export default function Navbar() {
-//   return (
-//     <nav className="nav">
-//       <ul>
-//         <CustomLink to="/" className="About">About</CustomLink>
-//         <CustomLink to="./components/Pages/Portfolio/Portfolio">Portfolio</CustomLink>
-//         <CustomLink to="./components/Pages/Contact/Contact">Contact</CustomLink>
-//         <CustomLink to="./components/Pages/Resume/Resume">Resume</CustomLink>
-//         </ul>
-//       </nav>
-
-//   )
-// }
-
-// function CustomLink({ href, children, ...props}) {
-//   const path = window.location.pathname
-
-//   return (
-//     <li className={path === href ? "active" : ""}>
-//       <Link href={href} {...props}>
-//         {children}
-//       </Link>
-
-//     </li>
-//   )
-// }
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 export default function Navbar() {
   return (
     <nav className="nav">
-      <a href="/" className="title">
+      <Link to="/" className="title">
         Matthew C
-      </a>
+      </Link>
       <ul>
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
-        </li>
-        <li>
-          <a href="/resume">Resume</a>
-        </li>
+        <CustomLink to="/about">About</CustomLink>
+        <CustomLink to="/portfolio">Portfolio</CustomLink>
+        <CustomLink to="/contact">Contact</CustomLink>
+        <CustomLink to="/resume">Resume</CustomLink>
       </ul>
     </nav>
   );
+}
+
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+
+  return (
+    <li className={isActive ? "active" : ""}>
+      <Link to={to} {...props}>{children}</Link>
+    </li>
+  )
 }
