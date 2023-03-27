@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Portfolio(props) {
 //   const cardStyle = {
 //     width: "25rem",
@@ -19,7 +21,7 @@ export default function Portfolio(props) {
                   className="card-img-top"
                   src={require("../Pages/WeatherApp.png")}
                   alt="Weather API"
-                  style={{ width: "30%", height: "300px" }}
+                  style={{ width: "100%", height: "300px" }}
                 />
               </a>
               <div className="card-body">
@@ -43,7 +45,7 @@ export default function Portfolio(props) {
                   className="card-img-top"
                   src={require("../Pages/TravelApp.png")}
                   alt="Travel Forum"
-                  style={{ width: "30%", height: "300px" }}
+                  style={{ width: "100%", height: "300px" }}
                 />
               </a>
               <div className="card-body">
@@ -66,7 +68,7 @@ export default function Portfolio(props) {
                   className="card-img-top"
                   src={require("../Pages/DictionaryApp.png")}
                   alt="Weather API"
-                  style={{ width: "30%", height: "300px" }}
+                  style={{ width: "100%", height: "300px" }}
                 />
               </a>
               <div className="card-body">
@@ -90,7 +92,7 @@ export default function Portfolio(props) {
                   className="card-img-top"
                   src={require("../Pages/WeatherApp.png")}
                   alt="Weather API"
-                  style={{ width: "30%", height: "300px" }}
+                  style={{ width: "100%", height: "300px" }}
                 />
               </a>
               <div className="card-body">
