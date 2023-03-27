@@ -1,7 +1,7 @@
 body {
     font-family: Work Sans;
     
-    background-color: rgb(247, 220, 166);
+    /* background-color: rgb(247, 220, 166); */
   
   }
 
@@ -45,7 +45,7 @@ nav a:hover {
 nav a:active {
     color: red;
     background-color: transparent;
-    text-decoration: bold;
+    
     
   }
 
