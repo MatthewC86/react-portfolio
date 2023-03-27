@@ -1,34 +1,44 @@
-import React, { useState } from 'react';
-
-function Contact() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Message:', message);
+import React from 'react'
+const Contact = () => {
+  const [formStatus, setFormStatus] = React.useState('Send')
+  const onSubmit = (e) => {
+    e.preventDefault()
+    setFormStatus('Submitted!')
+    const { name, email, message } = e.target.elements
+    const conFom = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    }
+    console.log(conFom)
   }
-
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Name:
-        <input type="text" value={name} onChange={e => setName(e.target.value)} />
-      </label>
-      <label>
-        Email:
-        <input type="email" value={email} onChange={e => setEmail(e.target.value)} />
-      </label>
-      <label>
-        Message:
-        <textarea value={message} onChange={e => setMessage(e.target.value)} />
-      </label>
-      <button type="submit">Submit</button>
-    </form>
-  );
+    <div className="container mt-5">
+      <h2 className="mb-3">Contact Me!</h2>
+      <form onSubmit={onSubmit}>
+        <div className="mb-3">
+          <label className="form-label" htmlFor="name">
+            Name
+          </label>
+          <input className="form-control" type="text" id="name" required />
+        </div>
+        <div className="mb-3">
+          <label className="form-label" htmlFor="email">
+            Email
+          </label>
+          <input className="form-control" type="email" id="email" required />
+        </div>
+        <div className="mb-3">
+          <label className="form-label" htmlFor="message">
+            Message
+          </label>
+          <textarea className="form-control" id="message" required />
+        </div>
+        <button className="btn btn-danger" type="submit">
+          {formStatus}
+        </button>
+      </form>
+    </div>
+  )
 }
-
-export default Contact;
+export default Contact

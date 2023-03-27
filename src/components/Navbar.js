@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Nav() {
-  const linkStyle = { border: '1px black', padding: '5px' };
+  const NavLink = { border: '1px black', padding: '5px' };
 
   return (
     <nav className="main-header-menu">
@@ -17,7 +17,7 @@ export default function Nav() {
       >
         {['About', 'Portfolio', 'Contact', 'Resume']
         .map(navi => (
-          <div style={linkStyle}>
+          <div style={NavLink}>
           <a href={"#" + navi.toLowerCase()}>{navi}</a>
         </div>
         ))}
@@ -27,6 +27,8 @@ export default function Nav() {
     </nav>
   );
 };
+
+
 
 
 
