@@ -1,9 +1,9 @@
 import React from "react";
 
-function About() {
+export default function About() {
   return (
     <div>
-        <img className="about-img " src={require("../About/logo.png")}alt="Matthew C"/>
+        <img className="about-img " src={require("../Pages/logo.png")}alt="Matthew C"/>
         <h1 classname="about-header center">About me</h1>
       <p className="content mt-4">
         My name is Mattew Courtney and have always had a passion for technology.
@@ -17,4 +17,4 @@ function About() {
   );
 }
 
-export default About;
+

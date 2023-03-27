@@ -56,8 +56,33 @@
 
 import Navbar from "./components/Navbar/Navbar"
 
+import About from "./components/Pages/About"
+import Portfolio from "./components/Pages/Portfolio"
+import Contact from "./components/Pages/Contact"
+import Resume from "./components/Pages/Resume"
+
 function App() {
-  return <Navbar />
+  let component
+  switch (window.location.pathname) {
+    case "/about":
+      component = <About />
+      break
+      case "/portfolio":
+        component = <Portfolio />
+        break
+        case "/contact":
+          component = <Contact />
+          break
+          case "/resume":
+            component = <Resume />
+            break
+  }
+  return (
+    <>
+    <Navbar />
+    {component}
+    </>
+  ) 
 }
 
 export default App
