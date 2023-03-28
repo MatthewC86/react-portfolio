@@ -14,7 +14,9 @@ const Contact = () => {
   }
   return (
     <div className="container mt-5">
-      <h2 className="mb-3">Contact Me!</h2>
+      <div className='row'>
+        <div className='mx-auto col-10 col-md-1 col-lg-6'>
+      <h1 className="mb-3 text-center">Contact Me!</h1>
       <form onSubmit={onSubmit}>
         <div className="mb-3">
           <label className="form-label" htmlFor="name">
@@ -38,6 +40,8 @@ const Contact = () => {
           {formStatus}
         </button>
       </form>
+    </div>
+    </div>
     </div>
   )
 }

@@ -1,65 +1,34 @@
 import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faGithub, faFacebook, faLinkedin  } from "@fortawesome/free-brands-svg-icons";
+import { Container } from "react-bootstrap";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
-function Footer() {
+const Footer = () => {
   return (
-
-    
-
-// 			<div>
-// 			<a href="https://github.com/" class="fa fa-github"
-// 					target="_blank"
-// 					rel="noopener noreferrer"
-// 				>
-// 					{/* <img
-// 						src={require("../../assets/logos/github-logo.png")}
-// 						alt="Github"
-// 						className="logo"
-// 					></img> */}
-// 				</a>
-// 			</div>
-// 			<div>
-// 				<a
-// 					href="www.linkedin.com/in/matthew-courtney-83143998"
-// 					target="_blank"
-// 					rel="noopener noreferrer"
-// 				>
-// 					<img
-// 						src={require("../Footer/linkedin.png")}
-// 						alt="LinkedIn"
-// 						className="logo"
-// 					></img>
-// 				</a>
-// 			</div> 
-<footer className="footer">
-			 <div> 
-				<a
-					href="https://facebook.com"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<img
-						src={require("../Footer/facebook.png")}
-						alt="Facebook"
-						className="logo"
-					></img>
-				</a>
-			</div>
-		</footer>
-  );
-}
-{/* <footer>
-      <div className="container">
-        <div className="social-links">
-          <a href="https://github.com/username"><i className="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/username"><i className="fab fa-linkedin"></i></a>
-          <a href="https://stackoverflow.com/users/1234567/username"><i className="fab fa-stack-overflow"></i></a>
-        </div>
+    <Container fluid className="bg-dark text-light py-3">
+      <div className="text-center">
+        <a
+          href="www.linkedin.com/in/matthew-courtney-83143998"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-light mx-3">
+          <FaLinkedin size={32} />
+        </a>
+        <a
+          href="https://github.com/Matthewc86"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-light mx-3">
+          <FaGithub size={32} />
+        </a>
+        <a href="mailto:cnymhw86@gmail.com" className="text-light mx-3">
+          <FaEnvelope size={32} />
+        </a>
       </div>
-    </footer>
+      <div className="text-center mt-3">
+        <p>&copy; All rights reserved.</p>
+      </div>
+    </Container>
   );
-} */}
-
+};
 
 export default Footer;

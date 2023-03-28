@@ -1,5 +1,5 @@
 import Header from "./components/Header"
-// import Footer from "./components/Footer/Footer"
+import Footer from "./components/Footer/Footer"
 import Navbar from "./components/Navbar/Navbar"
 import About from "./components/Pages/About"
 import Portfolio from "./components/Pages/Portfolio"
@@ -12,15 +12,16 @@ function App() {
     <>
     <Header />
     <Navbar />
-    <div className="container">
+    <div className="footer-container">
       <Routes>
         <Route path="/about" element={<About />}/>
         <Route path="/portfolio" element={<Portfolio />}/>
         <Route path="/contact" element={<Contact />}/>
         <Route path="/resume" element={<Resume />}/>
       </Routes>
+      <Footer /> 
     </div>
-    {/* <Footer /> */}
+    
     </>
   ) 
 }

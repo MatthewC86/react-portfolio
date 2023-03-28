@@ -6,6 +6,16 @@ body {
     background-color: rgb(241, 215, 145);
   
   }
+  .Footer {
+    margin: auto;
+  }
+
+  .footer-container {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 
   /* .container {
     margin: 1rem;
@@ -63,21 +73,11 @@ nav li:hover {
   }
 
   .about-img {
-    /* padding: 100px; */
-    /* padding-left: 1000px; */
-    /* clip-path: circle(50.0% at 50% 50%); */
     width: 350px;
-    /* align-items: center; */
     border-radius: 10px;
-    
-}
+  }
 
-/* p {
-    text-align: center;
-    
-    
 
-} */
 
 
 
