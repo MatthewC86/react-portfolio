@@ -11,20 +11,20 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="text-light mx-3">
-          <FaLinkedin size={32} />
+          <FaLinkedin size={30} />
         </a>
         <a
           href="https://github.com/Matthewc86"
           target="_blank"
           rel="noopener noreferrer"
           className="text-light mx-3">
-          <FaGithub size={32} />
+          <FaGithub size={30} />
         </a>
         <a href="mailto:cnymhw86@gmail.com" className="text-light mx-3">
-          <FaEnvelope size={32} />
+          <FaEnvelope size={30} />
         </a>
       </div>
-      <div className="text-center mt-3">
+      <div className="text-center mt-2">
         <p>&copy; All rights reserved.</p>
       </div>
     </Container>

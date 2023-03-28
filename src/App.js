@@ -12,13 +12,15 @@ function App() {
     <>
     <Header />
     <Navbar />
-    <div className="footer-container">
+    <div className="page-container">
+      <div className="content-wrap">
       <Routes>
         <Route path="/about" element={<About />}/>
         <Route path="/portfolio" element={<Portfolio />}/>
         <Route path="/contact" element={<Contact />}/>
         <Route path="/resume" element={<Resume />}/>
       </Routes>
+      </div>
       <Footer /> 
     </div>
     

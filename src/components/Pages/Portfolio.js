@@ -8,11 +8,11 @@ const Portfolio = () => {
   //   };
 
   return (
-    <div className="card-container my-5">
+    <div className="card-container text-center my-5">
       <h1 className="text-center mb-5" style={{ fontSize: "3rem" }}>
         Project portfolio!!
       </h1>
-      <div className="row">
+      <div className="row px-5">
         <div className="col">
         <div className="md-6 mb-5">
           <div className="card h-100">
