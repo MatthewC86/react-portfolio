@@ -3,16 +3,14 @@
 }
 
 body {
-    margin: 0;
-    
     background-color: rgb(241, 215, 145);
   
   }
 
-  .container {
+  /* .container {
     margin: 1rem;
     text-align: center;
-  }
+  } */
 
   .title {
     font-size: 2rem;
@@ -74,44 +72,14 @@ nav li:hover {
     
 }
 
-p {
+/* p {
     text-align: center;
-    /* padding: 100px; */
-    /* margin: 100px; */
+    
     
 
-}
+} */
 
-.card-container {
-  margin: 0;
-  padding:0%;
-  
-  justify-content: space-around;
-        
-       
-        
 
-        
-        
-       
-}
-
-.card {
- 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    
-  
-  
-
-}
 
 
   
