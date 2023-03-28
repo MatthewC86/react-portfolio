@@ -2,9 +2,9 @@ import React from "react";
 
 export default function About() {
   return (
-    <div>
-        <img className="about-img mt-4" src={require("../Pages/logo.png")}alt="Matthew C"/>
-        <h1 classname="about-header mt-5 center">About me</h1>
+    <div className="text-center">
+        <img className="text-center about-img  mt-5" src={require("../Pages/logo.png")}alt="Matthew C"/>
+        <h1 classname="about-header mt-5 ">About me</h1>
       <p className="content mt-5">
         My name is Mattew Courtney and have always had a passion for technology.
         I acquired an associates degree in Systems Developement and Programming
