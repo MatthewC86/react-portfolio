@@ -77,6 +77,26 @@ const Portfolio = () => {
 
       <div className="col-md-6 mb-5">
         <div className="card h-100">
+          <a href="https://quiet-depths-44401.herokuapp.com/">
+            <img
+              className="card-img-top"
+              src={require("../Pages/storeFront.png")}
+              alt="MERN store"
+              style={{ width: "100%", height: "300px" }}
+            />
+          </a>
+          <div className="card-body">
+            <h5 className="card-title text-center">MERN Store</h5>
+            <p className="card-text text-center">
+              MERN Store is an application for store owners to list and sell various items.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+
+      <div className="col-md-6 mb-5">
+        <div className="card h-100">
           <a href="https://matthewc86.github.io/forecast-machine/">
             <img
               className="card-img-top"
@@ -96,6 +116,8 @@ const Portfolio = () => {
       </div>
     </div>
     </div>
+
+    
   );
 };
 
